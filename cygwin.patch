@@ -1,0 +1,12 @@
+diff -ur geos-3.2.0rc3/tests/xmltester/tinyxml/tinyxml.h geos-3.2.0rc3.new/tests/xmltester/tinyxml/tinyxml.h
+--- geos-3.2.0rc3/tests/xmltester/tinyxml/tinyxml.h	2009-12-05 12:01:48.625000000 +0100
++++ geos-3.2.0rc3.new/tests/xmltester/tinyxml/tinyxml.h	2009-12-05 12:00:14.718750000 +0100
+@@ -57,7 +57,7 @@
+ // new safe versions. This probably doesn't fully address the problem,
+ // but it gets closer. There are too many compilers for me to fully
+ // test. If you get compilation troubles, undefine TIXML_SAFE
+-// #define TIXML_SAFE
++#define TIXML_SAFE
+ 
+ #ifdef TIXML_SAFE
+ 	#if defined(_MSC_VER) && (_MSC_VER >= 1400 )
