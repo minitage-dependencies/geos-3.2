@@ -1,6 +1,7 @@
 import os
 import sys
 def h(options, buildout):
+    os.environ['CXX'] = 'g++ -fpermissive'
     if sys.platform.startswith('cygwin'):
         c = os.getcwd()
         os.chdir(options['compile-directory'])
